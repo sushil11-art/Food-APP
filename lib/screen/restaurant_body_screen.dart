@@ -110,7 +110,7 @@ class RestaurantScreenBody extends StatelessWidget {
                     decoration: const BoxDecoration(
                         image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("assets/images/food.jpg"))),
+                            image: AssetImage("images/food.jpg"))),
                   )
                 ],
               )
