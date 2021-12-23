@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/screen/home_screen.dart';
 import 'package:food_app/screen/restaurant_body_screen.dart';
+import 'package:get/get.dart';
 
 class RestaurantScreen extends StatelessWidget {
+  // var Get;
+
   const RestaurantScreen({Key? key}) : super(key: key);
 
   @override
@@ -20,7 +24,9 @@ class RestaurantScreen extends StatelessWidget {
               ))
         ],
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.off(FoodHomeScreen());
+            },
             icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30)),
         bottom: PreferredSize(
           child: Padding(

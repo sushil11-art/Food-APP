@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/screen/restaurant_screen.dart';
 import 'package:food_app/widgets/bottom_nav_bar.dart';
 import 'package:food_app/widgets/food_type_panel.dart';
 import 'package:food_app/widgets/home_screen_body.dart';
 import 'package:food_app/widgets/search_bar.dart';
+import 'package:get/get.dart';
 
 class FoodHomeScreen extends StatelessWidget {
+  // var Get;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +25,7 @@ class FoodHomeScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(9.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: const [
+                      children: [
                         Text('Food Delivery',
                             style:
                                 TextStyle(fontSize: 30, color: Colors.white)),
@@ -29,7 +33,12 @@ class FoodHomeScreen extends StatelessWidget {
                             child: SizedBox(
                           width: 10,
                         )),
-                        Image(image: AssetImage('images/bitbucket.png')),
+                        InkWell(
+                            onTap: () {
+                              Get.off(RestaurantScreen());
+                            },
+                            child: Image(
+                                image: AssetImage('images/bitbucket.png'))),
                       ],
                     ),
                   ),
