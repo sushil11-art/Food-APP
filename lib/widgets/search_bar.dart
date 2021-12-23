@@ -11,7 +11,7 @@ class SearchBar extends StatelessWidget {
       children: [
         Flexible(
           child: Container(
-            padding: EdgeInsets.all(10.0),
+            margin: EdgeInsets.all(8),
             child: TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(

@@ -11,7 +11,7 @@ class FoodTypePanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(vertical: 20.0),
+        margin: EdgeInsets.all(8),
         height: MediaQuery.of(context).size.height * 0.25,
         child: new ListView(
           scrollDirection: Axis.horizontal,
