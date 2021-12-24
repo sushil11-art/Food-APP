@@ -147,9 +147,8 @@ class RestaurantScreenBody extends StatelessWidget {
 
                                   ),
                               // ElevatedButton.styleFrom(primary: Colors.yellow),
-                              child: Text(
-                                'ADD',
-                                style: TextStyle(color: Colors.black),
+                              child: const Center(
+                                child: Icon(Icons.add, color: Colors.black),
                               ),
                             ),
                           )
