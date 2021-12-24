@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/screen/order_screen.dart';
 import 'package:food_app/screen/restaurant_screen.dart';
 import 'package:food_app/widgets/bottom_nav_bar.dart';
 import 'package:food_app/widgets/food_type_panel.dart';
@@ -26,9 +27,14 @@ class FoodHomeScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text('Food Delivery',
-                            style:
-                                TextStyle(fontSize: 30, color: Colors.white)),
+                        InkWell(
+                          onTap: () {
+                            Get.off(OrderScreen());
+                          },
+                          child: Text('Food Delivery',
+                              style:
+                                  TextStyle(fontSize: 30, color: Colors.white)),
+                        ),
                         Expanded(
                             child: SizedBox(
                           width: 10,
