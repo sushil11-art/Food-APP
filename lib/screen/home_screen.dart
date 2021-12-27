@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/screen/order_screen.dart';
 import 'package:food_app/screen/restaurant_screen.dart';
+import 'package:food_app/screen/wallet_screen.dart';
 import 'package:food_app/widgets/bottom_nav_bar.dart';
 import 'package:food_app/widgets/food_type_panel.dart';
 import 'package:food_app/widgets/home_screen_body.dart';
@@ -17,8 +18,12 @@ class FoodHomeScreen extends StatelessWidget {
         home: Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.black,
-              actions: const [
-                Image(image: AssetImage('images/wallet.png')),
+              actions: [
+                InkWell(
+                    onTap: () {
+                      Get.off(WalletScreen());
+                    },
+                    child: Image(image: AssetImage('images/wallet.png'))),
               ],
               leading: const Image(image: AssetImage('images/back.png')),
               bottom: PreferredSize(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_app/screen/home_screen.dart';
 import 'package:food_app/screen/order_screen.dart';
 import 'package:food_app/screen/restaurant_screen.dart';
+import 'package:food_app/screen/wallet_screen.dart';
 import 'package:get/get.dart';
 
 void main() {
